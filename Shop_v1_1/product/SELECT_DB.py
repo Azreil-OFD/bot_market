@@ -19,7 +19,7 @@ class _DataClass:
         self.description = db_data[2+shift]
         self.url_photo = db_data[3 + shift]
         self.rowid_key = rowid_key
-
+        
     def __str__(self) -> str:
         if self.rowid_key:
             return f'{self.rowid} | {self.category_id} | {self.title} | {self.description} | {self.url_photo}'
